@@ -58,3 +58,8 @@ A Job can be executed immediately(oneTimeSchedule endpoint) or according to a sc
 1. For possible endpoint calls with sample, quartz.postman_collection.json can be imported to postman application
 1. All Unit test classes cover the cases with corner cases, Approximately %100 coverage is provided. 
 1. data.sql file has the table mappings for h2 db config tables.
+
+##### Drive link
+https://drive.google.com/file/d/12MAv8q0zXXmIYy8tTKWRtOhKzUDvEZYB/view
+##### Github repo link
+https://github.com/ufuksak/job-scheduler-demo
