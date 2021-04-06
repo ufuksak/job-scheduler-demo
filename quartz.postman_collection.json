@@ -201,37 +201,13 @@
 			"response": []
 		},
 		{
-			"name": "email-jobs-find",
+			"name": "email-jobs-updateJob",
 			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/email/jobs/getJob/ufuk",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"email",
-						"jobs",
-						"getJob",
-						"ufuk"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "email-jobs-update",
-			"request": {
-				"method": "POST",
+				"method": "PUT",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"ufuk5\",\n    \"group\": \"1\",\n    \"subject\": \"test\",\n    \"messageBody\": \"text\",\n    \"to\" : [\"testtopuptest@gmail.com\"],\n    \"triggerDetails\": [{\"name\":\"test2\",\"fireTime\":null, \"cron\":\"0 * * ? * *\"}]\n}",
+					"raw": "{\n    \"name\": \"ufuk\",\n    \"group\": \"1\",\n    \"subject\": \"test23434\",\n    \"messageBody\": \"text32423\",\n    \"to\" : [\"testtopuptest@gmail.com\"],\n    \"triggerDetails\": [{\"name\":\"test224\",\"fireTime\":null, \"cron\":\"0 * * ? * *\"}]\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -251,6 +227,30 @@
 						"email",
 						"jobs",
 						"updateJob",
+						"ufuk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "email-jobs-find",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/email/jobs/getJob/ufuk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"email",
+						"jobs",
+						"getJob",
 						"ufuk"
 					]
 				}
