@@ -1,0 +1,334 @@
+{
+	"info": {
+		"_postman_id": "4cb94a2a-b746-4214-b453-cffb3a43c393",
+		"name": "quartz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "manager-oneTimeJob",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"ufuk\",\n    \"group\": \"1\",\n    \"subject\": \"test\",\n    \"messageBody\": \"text\",\n    \"to\" : [\"testtopuptest@gmail.com\"],\n    \"triggerDetails\": [{\"name\":\"test\",\"fireTime\":null, \"cron\":\"\"}]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/manager/oneTimeSchedule",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"manager",
+						"oneTimeSchedule"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "manager-getAllJobActions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/manager/getAllJobActions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"manager",
+						"getAllJobActions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "manager-unScheduleJob",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/manager/unScheduleJob?jobName=ufuk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"manager",
+						"unScheduleJob"
+					],
+					"query": [
+						{
+							"key": "jobName",
+							"value": "ufuk"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "manager-jobs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/manager/jobs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"manager",
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "manager-start",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/manager/start?jobName=ufuk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"manager",
+						"start"
+					],
+					"query": [
+						{
+							"key": "jobName",
+							"value": "ufuk"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "email-jobs-createJob",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"ufuk\",\n    \"group\": \"1\",\n    \"subject\": \"test\",\n    \"messageBody\": \"text\",\n    \"to\" : [\"testtopuptest@gmail.com\"],\n    \"triggerDetails\": [{\"name\":\"test\",\"fireTime\":null, \"cron\":\"0 * * ? * *\"}]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/email/jobs/createJob",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"email",
+						"jobs",
+						"createJob"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "email-jobs-createJob-2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"ufuk2\",\n    \"group\": \"1\",\n    \"subject\": \"test\",\n    \"messageBody\": \"text\",\n    \"to\" : [\"testtopuptest@gmail.com\"],\n    \"triggerDetails\": [{\"name\":\"test2\",\"fireTime\":null, \"cron\":\"0 * * ? * *\"}]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/email/jobs/createJob",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"email",
+						"jobs",
+						"createJob"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "email-jobs-find",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/email/jobs/getJob/ufuk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"email",
+						"jobs",
+						"getJob",
+						"ufuk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "email-jobs-update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"ufuk5\",\n    \"group\": \"1\",\n    \"subject\": \"test\",\n    \"messageBody\": \"text\",\n    \"to\" : [\"testtopuptest@gmail.com\"],\n    \"triggerDetails\": [{\"name\":\"test2\",\"fireTime\":null, \"cron\":\"0 * * ? * *\"}]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/email/jobs/updateJob/ufuk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"email",
+						"jobs",
+						"updateJob",
+						"ufuk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "email-jobs-delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/email/jobs/deleteJob/ufuk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"email",
+						"jobs",
+						"deleteJob",
+						"ufuk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "email-jobs-pause",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/email/jobs/ufuk/pause/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"email",
+						"jobs",
+						"ufuk",
+						"pause",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "email-jobs-resume",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/email/jobs/ufuk/resume",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"email",
+						"jobs",
+						"ufuk",
+						"resume"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
